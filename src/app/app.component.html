@@ -1,8 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center" id="app-title">
-  <h1>
+  <h2>
     Welcome to {{ title }}!
-  </h1>
- </div>
-<h2>This is Petar's demo Angular application</h2>
-
+  </h2>
+</div>
+<div class="content">
+  <div>
+    <a routerLink="/example">Example Component</a>
+    &nbsp;
+    <a routerLink="/binding">Binding in Angular</a>
+  </div>
+  <router-outlet></router-outlet>
+</div>
