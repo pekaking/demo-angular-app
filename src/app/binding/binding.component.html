@@ -1,11 +1,17 @@
 <div class="content">
+
   <h3>{{title}}</h3>
+  
   <div class="content">
     <label for="num-input">Enter any number:&nbsp;</label>
     <input type="number" name="num-input" placeholder="enter number..." [(ngModel)]="enteredNumber" />
-    <br/><br/><br/>
-    <button [disabled]="!enteredNumber || enteredNumber < 0" (click)="isPrime()">Check if number {{enteredNumber}} is prime</button>
-    <br/><br/><br/>
+    <br /><br /><br />
+
+    <button [disabled]="!enteredNumber || enteredNumber < 0" (click)="isPrime()">
+      Check if number {{enteredNumber}} is prime
+    </button>
+    <br /><br /><br />
+
     <div class="content">{{resultMsg}}</div>
   </div>
 </div>
